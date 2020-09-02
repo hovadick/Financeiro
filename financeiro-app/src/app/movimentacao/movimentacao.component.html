@@ -1,0 +1,27 @@
+<form action="">
+<div class="form-group mb-2">
+  <input type="text" class="form-control mr-2">
+  <button class="btn btn-outline-success">Buscar</button>
+</div>
+</form>
+<table class="table table-striped">
+<thead class="thead-dark">
+<tr>
+  <td>Codigo</td>
+  <td>Data</td>
+  <td>Competencia</td>
+  <td>Descrição</td>
+  <td>Valor</td>
+</tr>
+</thead>
+<tbody>
+<tr *ngFor="let mov of movimentacao"    >
+  <td>{{mov.idMvto}}</td>
+  <td>{{mov.dtMvto}}</td>
+  <td>{{mov.dtCompetencia}}</td>
+  <td>{{mov.dsMvto}}</td>
+  <td>{{mov.vlMvto}}</td>
+</tr>
+</tbody>
+
+</table>
